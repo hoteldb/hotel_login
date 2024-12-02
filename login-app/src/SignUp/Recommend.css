@@ -1,0 +1,81 @@
+
+.recommend-body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center; /* 화면 전체에서 가로 중앙 정렬 */
+  align-items: center; /* 화면 전체에서 세로 중앙 정렬 */
+  height: 100vh; /* 화면 높이를 기준으로 중앙 정렬 */
+}
+
+.recommend-container {
+  text-align: center;
+  max-width: 600px; /* 컨테이너 너비를 제한 */
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recommend-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.recommend-container p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hotel-types {
+  display: flex;
+  flex-wrap: wrap; /* 버튼을 다음 줄로 넘김 */
+  gap: 10px; /* 버튼 사이 간격 */
+  justify-content: center; /* 버튼을 가로로 중앙 정렬 */
+}
+
+.hotel-type-button {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hotel-type-button.selected {
+  border-color: #007BFF;
+  background: #007BFF;
+  color: white;
+}
+
+.hotel-type-button:hover {
+  background: #eaeaea;
+}
+
+.signup-button {
+  margin-top: 20px; /* 버튼과 타입 선택 간격 */
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+  background: #0056b3;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
